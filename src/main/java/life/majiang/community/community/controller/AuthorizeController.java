@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class AuthorizeController {
+    public String test;
     @GetMapping("/callback")
     public String callback(@RequestParam(name = "code")String code,
                            @RequestParam(name = "state")String state){
